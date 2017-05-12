@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	background-image: url("../resources/back.jpg");
-	background-size: cover;
-	background-size: auto 100%;
+	background-repeat: no-repeat;
+    	background-size: 100% 100%;
 	background-position: center center;
 	background-color: black;
 }
