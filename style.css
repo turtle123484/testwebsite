@@ -14,21 +14,19 @@ body {
 }
 
 #align {
-	margin: -120px 400px;
+    margin: 0 auto;
 	text-align: center;
 	max-width: 500px;
-  	top: 100px;
-  	position: absolute;
 }
 
 .game {
 	background-color: rgba(190,190,190,0.3);
 	border: 2px solid rgba(255,255,255,0.6);
 	border-radius: 8px;
-	width: 120px;
+	width: 130px;
 	height: 50px;
 	margin: 5px 5px;
-	padding: 0 5px;
+	padding: 0 0px;
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 50px;
@@ -45,6 +43,8 @@ body {
     display: inline-block;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .game:hover{
@@ -61,16 +61,31 @@ body {
     box-shadow: 0 0 50px 5px rgba(233, 170, 252, 0.68);
 }
 
-#world {
-  position:absolute;
-  width:100%;
-  height:100%;
-  overflow:hidden;
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    z-index: 0;
 }
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
