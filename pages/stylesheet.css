@@ -6,3 +6,81 @@ body {
 	width: 100%;
 	text-align: center;
 }
+
+svg {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+svg:hover {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+svg:hover circle {
+  transition: stroke-width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  stroke-width: 8.35px;
+}
+
+.house {
+  transition: stroke-width 0.4s 0.1s ease;
+  stroke-width: 2px;
+}
+
+svg:hover .house {
+  transition: stroke-width 0.4s 0.1s ease;
+  stroke-width: 5px;
+}
+
+.house * {
+  transition: stroke-dashoffset 0.4s ease;
+  stroke-dasharray: 50px 50px;
+  stroke-dashoffset: 50px;
+}
+
+.floor {
+  transition: stroke-dashoffset 0.2s ease;
+  transition-delay: 0s;
+}
+
+.wall {
+  transition-delay: 0.025s;
+}
+
+.roof {
+  transition-delay: 0.1s;
+}
+
+.chimney {
+  transition-delay: 0s;
+}
+
+svg:hover .house * {
+  transition: stroke-dashoffset 0.4s ease;
+  stroke-dashoffset: 0px;
+}
+
+svg:hover .floor {
+  transition: stroke-dashoffset 0.2s ease;
+  transition-delay: 0.1s;
+}
+
+svg:hover .wall {
+  transition-delay: 0.025s;
+}
+
+svg:hover .roof {
+  transition-delay: 0s;
+}
+
+svg:hover .chimney {
+  transition-delay: 0.1s;
+}
+
+span {
+  margin-top: 1rem;
+}
