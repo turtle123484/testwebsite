@@ -1,9 +1,13 @@
 body {
 	margin: 0;
-  	background-image:    url(../resources/back.jpg);
-    	background-size:     cover;                     
-    	background-repeat:   no-repeat;
-    	background-position: center center;
+  	overflow-y: hidden ! important;
+        overflow-x: hidden ! important;
+        background-color: #f8f8f8;
+        background-image: url('../resources/back.jpg');
+        /*background-size: cover;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
 }
 
 .game {
