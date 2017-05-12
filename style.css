@@ -61,7 +61,12 @@ body {
     box-shadow: 0 0 50px 5px rgba(233, 170, 252, 0.68);
 }
 
-
+#world {
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
 
 
 
