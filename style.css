@@ -12,6 +12,21 @@ body {
 	background-image: url("resources/picture.jpg");
 	margin: 0;
 }
+a {
+    text-decoration: none;	
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+}
 
 #align {
     margin: 0 auto;
