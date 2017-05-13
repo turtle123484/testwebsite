@@ -13,19 +13,14 @@ body {
 	margin: 0;
 }
 a {
-    text-decoration: none;	
-}
-
-a:link {
-    color: green;
-}
-
-a:visited {
-    color: green;
+    text-decoration: none;
+    color: #0465b9;
+    transition: 0.2s ease;
 }
 
 a:hover {
-    color: blue;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.41);
 }
 
 #align {
@@ -86,21 +81,3 @@ a:hover {
     text-align: center;
     z-index: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
