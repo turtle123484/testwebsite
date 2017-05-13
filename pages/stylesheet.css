@@ -1,96 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
 	font-family: 'Montserrat', sans-serif;	
 }
+
+a{
+    text-decoration: none;
+}
+
 body {
 	margin: 0;
 	display: flex;
   	flex-direction: column;
   	align-items: center;
   	justify-content: center;
+    background-image: url("../resources/new.jpg");
 }
 
 .game {
 	width: 100%;
 	text-align: center;
+    margin-top: 25px;
 }
 
-/*
-Animated Go Home Button by Adrian Egger
-*/
-svg {
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  display: block;
-  height: 5rem;
-  width: 5rem;
-  cursor: pointer;
+object{
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
 }
 
-svg:hover {
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform: scale(1.2);
-  transform-origin: 50% 50%;
+.back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-weight: 800;
+    
+    margin: 10px;
+    opacity: 0.4;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 2px 0px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    height: 75px;
 }
 
-svg:hover circle {
-  transition: stroke-width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-  stroke-width: 8.35px;
+.back > img {
+    display: inline;
+    height: 45px;
+    margin-top: -5px;
+    margin-bottom: -27px;
+    transition: 0.3s ease;
 }
 
-.house {
-  transition: stroke-width 0.4s 0.1s ease;
-  stroke-width: 2px;
+.back > p {
+    margin-bottom: -6px;
+    text-decoration: none;
+    color: black;
 }
 
-svg:hover .house {
-  transition: stroke-width 0.4s 0.1s ease;
-  stroke-width: 5px;
+.back:hover{
+    cursor: pointer;
+    opacity: 1;
 }
 
-.house * {
-  transition: stroke-dashoffset 0.4s ease;
-  stroke-dasharray: 50px 50px;
-  stroke-dashoffset: 50px;
+.back:hover > img {
+    animation: rotateLogo 0.4s 1;
 }
 
-.floor {
-  transition: stroke-dashoffset 0.2s ease;
-  transition-delay: 0s;
+#top {
+    margin-left: 18px;
 }
 
-.wall {
-  transition-delay: 0.025s;
+#bottom {
+    display: none;
 }
 
-.roof {
-  transition-delay: 0.1s;
+@keyframes rotateLogo {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 
-.chimney {
-  transition-delay: 0s;
-}
-
-svg:hover .house * {
-  transition: stroke-dashoffset 0.4s ease;
-  stroke-dashoffset: 0px;
-}
-
-svg:hover .floor {
-  transition: stroke-dashoffset 0.2s ease;
-  transition-delay: 0.1s;
-}
-
-svg:hover .wall {
-  transition-delay: 0.025s;
-}
-
-svg:hover .roof {
-  transition-delay: 0s;
-}
-
-svg:hover .chimney {
-  transition-delay: 0.1s;
-}
-
-span {
-  margin-top: 1rem;
+@media(max-width: 862px){
+    #top{
+        display: none;
+    }
+    
+    #bottom{
+        display: inherit;
+        position: relative;
+        margin-top: 7px;
+    }
 }
