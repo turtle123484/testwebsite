@@ -14,7 +14,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: green;
+    color: #0465b9; /*Green does not match with purple and pink but blue does*/
     transition: 0.2s ease;
 }
 
